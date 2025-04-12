@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini App Debo </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Debora -->
+  <main class="app">
+    <h1>Joyeux Anniversaire <br> Debora !!! </h1>
+     <consigne> tape sur les numéros <br> l'ordre :D </consigne>
+     <consigne2> for the prettiest girlie <br> love uuu <3 </consigne2>
+    <consigne3> made by Audrey </consigne3>
+    <img src="images/debo_portrait.gif" alt="animation pretty debo" class="gif" />
+    <!-- 1er bouton et gif -->
+    <button class="magic-button"><h2>2</h2></button>
+    <img src="images/fleursblanches.gif" alt="Surprise" class="fleursblanches hidden" />
+        <!-- 2e bouton et gif -->
+        <button class="magic-button2"><h2>3</h2></button>
+        <img src="images/debonita_bowtie.gif" alt="Surprise" class="noeud hidden" />
+                <!-- 3e bouton et gif -->
+                <button class="magic-button3"><h2>4</h2></button>
+                <img src="images/collier.gif" alt="Surprise" class="collier hidden" />
+                   <!-- 4e bouton et gif -->
+                   <button class="magic-button4"><h2>5</h2></button>
+                   <img src="images/tulipes.gif" alt="Surprise" class="tulipes hidden" />
+</main>
+
+    <!-- Nouveau bouton pour la musique -->
+    <button class="music-button"><h2>1</h2></button>
+  </main>
+
+    <!-- Ajout de l'élément audio -->
+    <audio id="birthday-audio" src="audio/happybirthdaydebo.mp3" preload="auto"></audio>
+
+<script>
+    // Sélection des éléments
+    const button = document.querySelector('.magic-button');
+    const gif = document.querySelector('.fleursblanches');
+    const button2 = document.querySelector('.magic-button2');
+    const gif2 = document.querySelector('.noeud');
+    const button3 = document.querySelector('.magic-button3');
+    const gif3 = document.querySelector('.collier');
+    const button4 = document.querySelector('.magic-button4');
+    const gif4 = document.querySelector('.tulipes');
+    const musicButton = document.querySelector('.music-button'); // Nouveau bouton pour la musique
+
+     // Sélection de l'élément audio
+     const audio = document.querySelector('#birthday-audio'); // Ajout de cette ligne pour récupérer l'élément audio
+
+    // Fonction pour afficher le premier gif
+    const showGif1 = () => {
+      gif.classList.remove('hidden');  // Affiche le gif fleursblanches
+    };
+
+    // Fonction pour afficher le deuxième gif
+    const showGif2 = () => {
+      gif2.classList.remove('hidden');  // Affiche le gif noeud
+    };
+
+    // Fonction pour afficher le troisième gif
+    const showGif3 = () => {
+      gif3.classList.remove('hidden');  // Affiche le gif collier
+    };
+
+        // Fonction pour afficher le quatrième gif
+        const showGif4 = () => {
+      gif4.classList.remove('hidden');  // Affiche le gif tulipes
+    };
+
+    // Fonction pour jouer la musique
+    const playMusic = () => {
+      audio.play(); // Joue la musique
+    };
+
+    // Ajout des événements pour les boutons
+    button.addEventListener('click', showGif1);
+    button2.addEventListener('click', showGif2);
+    button3.addEventListener('click', showGif3);
+    button4.addEventListener('click', showGif4);
+    musicButton.addEventListener('click', playMusic); // Lien entre le bouton de musique et la fonction
+  </script>
+
+</body>
+</html>

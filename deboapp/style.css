@@ -1,0 +1,209 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    .crafty-girls-regular {
+        font-family: "Crafty Girls", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+}
+
+  /* Style global */
+  body, html {
+    height: 100%;
+    font-family: 'Crafty Girls', cursive;
+    background-color: #fcc1ad;
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  /* Container principal */
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  /* Titre */
+  h1 {
+    font-family: "Crafty Girls", cursive;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  h2 {
+    font-family: "Crafty Girls", cursive;
+    font-size: 1rem;
+    margin-top: 0rem;
+    color:#ffffff;
+  }
+
+  consigne {
+    font-family: "Crafty Girls", cursive;
+    font-size: 1rem;
+    margin-top: 0rem;
+    color:#ffffff;
+    transform: translate(60%, 20%);
+  }
+  consigne2 {
+    font-family: "Crafty Girls", cursive;
+    font-size: 1rem;
+    margin-top: 0rem;
+    color:#ffffff;
+    transform: translate(50%, 1130%);
+  }
+
+  consigne3 {
+    font-family: "Crafty Girls", cursive;
+    font-size: 1rem;
+    margin-top: 0rem;
+    color:#ffffff;
+    transform: translate(140%, 2400%);
+  }
+  
+  /* Image GIF */
+  .gif {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    transform: translate(0, -21%);
+   /* border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);*/
+  }
+
+  .music-button {
+    position: absolute;
+    z-index: 2;
+    top: 70%; /* Placer un peu plus bas que les autres boutons */
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.217);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-210%, -750%);
+  }
+
+  .magic-button {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.217);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-280%, -300%);
+  }
+
+  .magic-button2 {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.217);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(70%, -200%);
+  }
+
+  .magic-button3 {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.217);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(150%, 10%);
+  }
+  
+  .magic-button4 {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.217);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(220%, 350%);
+  }
+
+  .fleursblanches {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 3;
+    transform: translate(0%, 10%);
+  }
+
+  .noeud {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 3;
+    transform: translate(5%, 17%);
+  }
+
+  .collier {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 3;
+    transform: translate(5%, 17%);
+  }
+
+  .tulipes {
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 3;
+    transform: translate(-20%, 25%) rotate(-15deg);
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  
